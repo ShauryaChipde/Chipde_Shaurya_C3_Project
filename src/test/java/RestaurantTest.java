@@ -59,13 +59,15 @@ class RestaurantTest {
     @Test
     public void calculate_price_estimate_of_selected_menu_items_is_total_of_all_prices()
     {
-        assertEquals(119+269,restaurant.calculateTotalpriceEstimateOfSelectedItemsMenu("Sweet corn soup","Vegetable lasagne"));
+        assertEquals(388,restaurant.calculateTotalpriceEstimateOfSelectedItemsMenu("Sweet corn soup","Vegetable lasagne"));
     }
 
     @Test
     public void total_price_estimate_initially_should_be_zero()
     {
-        assertEquals(0,restaurant.CheckInitialPriceestimateIsZero());
+        assertEquals(0,restaurant.calculateTotalpriceEstimateOfSelectedItemsMenu());
     }
-    //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+    //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
 }
